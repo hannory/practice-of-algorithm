@@ -3,13 +3,13 @@ package org.home.strategy.chap06_exhaustiveSearch;
 import java.util.ArrayList;
 import java.util.Scanner;
 
-public class NestedLoop {
+public class NestedLoop2 {
 	static int pickByLoop(int n) {
 		int ret = 0;
 		
 		for(int i = 0; i < n; i++) {
 			for(int j = i + 1; j < n; j++) {
-				for(int k = j + 1; k < n; k++) {
+				for(int k = j + 1; j < n; k++) {
 					for(int l = k + 1; l < n; l++) {
 						System.out.println(i + " " + j + " " + k + " " + l);
 						ret += 1;
@@ -29,10 +29,11 @@ public class NestedLoop {
 	
 	static void pick(int n, ArrayList<Integer> picked, int toPick) {
 		
-		if(toPick == 0) { 
+		if(toPick == 0) {
+			
 			printPicked(picked);
 			ret2 += 1;
-			return; 
+			return;
 		}
 		// 고를 수 있는 가장 작은 번호를 계산한다.
 		int smallest = picked.isEmpty()? 0 : picked.get(picked.size() - 1) + 1;
@@ -48,21 +49,26 @@ public class NestedLoop {
 		System.out.println(picked);
 	}
 	
+	static void loopTest(int n) {
+		for(int i = 0; i < n; i++) {
+			System.out.println(i);
+		}
+	}
+	
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		int n = sc.nextInt();
 		ArrayList<Integer> picked = new ArrayList<Integer>();
 		
-		System.out.println("반복문 이용 : " + pickByLoop(n));
+		//System.out.println("반복문 이용 : " + pickByLoop(n));
 		
-		pick(n, picked, 4);
-		System.out.println("재귀함수 이용 : " + ret2);
+		//pick(n, picked, 4);
+		//System.out.println("재귀함수 이용 : " + ret2);
+		
+		loopTest(n);
+		
 	}
 }
-
-
-
-
 
 
 
