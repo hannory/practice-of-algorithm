@@ -1,4 +1,4 @@
-package org.home.programmers;
+package org.home.programmers.level1;
 
 import java.util.*;
 

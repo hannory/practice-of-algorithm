@@ -1,6 +1,6 @@
 package org.home.strategy.chap06_exhaustiveSearch;
 
-import java.util.ArrayList;
+
 import java.util.Scanner;
 
 // 코드 6.1 : 1부터 n까지의 합을 계산하는 반복 함수와 재귀 함수
