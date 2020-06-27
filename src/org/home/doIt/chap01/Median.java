@@ -1,4 +1,4 @@
-package doItAlgorythm.com.home.chap01;
+package org.home.doIt.chap01;
 
 import java.util.Scanner;
 
@@ -53,18 +53,18 @@ public class Median {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		
-		System.out.println("¼¼ Á¤¼öÀÇ Áß¾Ó°ªÀ» ±¸ÇÕ´Ï´Ù.");
-		System.out.print("aÀÇ °ª : ");
+		System.out.println("ì„¸ ì •ìˆ˜ì˜ ì¤‘ì•™ê°’ì„ êµ¬í•©ë‹ˆë‹¤.");
+		System.out.print("aì˜ ê°’ : ");
 		int a = sc.nextInt();
-		System.out.print("bÀÇ °ª : ");
+		System.out.print("bì˜ ê°’ : ");
 		int b = sc.nextInt();
-		System.out.print("cÀÇ °ª : ");
+		System.out.print("cì˜ ê°’ : ");
 		int c = sc.nextInt();
 		
 		sc.close();
 		
-		System.out.println("³ªÀÇ Áß¾Ó°ªÀº " + med3(a, b, c) + "ÀÔ´Ï´Ù.");
-		System.out.println("Ã¥ÀÇ Áß¾Ó°ªÀº " + medBook3(a, b, c) + "ÀÔ´Ï´Ù.");
+		System.out.println("ë‚´ê°€ í•´ë³¸ ì¤‘ì•™ê°’ì€ " + med3(a, b, c) + "ì…ë‹ˆë‹¤.");
+		System.out.println("ì±…ì— ë‚˜ì˜¨ ì¤‘ì•™ê°’ì€ " + medBook3(a, b, c) + "ì…ë‹ˆë‹¤.");
 		
 	}
 }
