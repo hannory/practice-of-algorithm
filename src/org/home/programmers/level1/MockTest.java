@@ -14,7 +14,7 @@ class Solution {
 			}
 		}
 		
-		// 두 번째 수포자 정답 개수 구하기
+		// 두 번째 수포자 정답 개수 구하기 
 		for(int i = 0; i < answers.length; i++) {
 			if(i % 2 == 0) {
 				if(answers[i] == 2) {

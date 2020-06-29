@@ -1,5 +1,6 @@
 package org.home.programmers.level1;
 
+// 메모리 14344 KB, 시간 112 ms
 public class Main {
 
 	public static void main(String[] args) {
